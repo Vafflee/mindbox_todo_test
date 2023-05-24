@@ -10,7 +10,7 @@ export const App = () => {
   const tasks: ITask[] = getTasksFromLocalStorage() || [];
 
   return (
-    <div className={'container w-50'}>
+    <div className={'container w-75'}>
       <h1 className='mt-5'>My todos</h1>
       <TodoList initialTasks={tasks}/>
     </div>

@@ -45,7 +45,7 @@ export const TodoList: FC<TodoListProps> = ({ initialTasks }) => {
     <div className='d-flex flex-column'>
       <NewTaskForm onSubmit={createNewTask} />
       <div className="row">
-        <div className="col" data-testid='uncompleted-tasks'>
+        <div className="col-12 col-xl-6" data-testid='uncompleted-tasks'>
           <TaskList 
             title='Uncompleted tasks' 
             emptyText='There is no uncompleted tasks yet' 
@@ -54,7 +54,7 @@ export const TodoList: FC<TodoListProps> = ({ initialTasks }) => {
             deleteTask={deleteTask} 
           />
         </div>
-        <div className="col" data-testid='completed-tasks'>
+        <div className="col-12 col-xl-6" data-testid='completed-tasks'>
           <TaskList 
             title='Completed tasks' 
             emptyText='There is no completed tasks yet' 
