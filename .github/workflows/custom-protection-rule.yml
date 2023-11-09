@@ -1,7 +1,7 @@
 name: Custom protection rule
 on:
   pull_request:
-    types: create
+    branches: [ main ]
 jobs:
   check-build:
     runs-on: ubuntu-latest
