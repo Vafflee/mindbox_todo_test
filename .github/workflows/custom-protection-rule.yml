@@ -1,0 +1,14 @@
+name: Custom protection rule
+on:
+  pull_request:
+    types: create
+jobs:
+  check-build:
+    runs-on: ubuntu-latest
+    steps:
+    
+      - name: Checkout this repository
+        uses: actions/checkout@v3
+
+      - name: Say hello
+        run: echo "Hello world!"
